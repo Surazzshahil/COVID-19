@@ -13,11 +13,13 @@ function covid19(country){
             return response.json();
         })
         .then(data=>{
-            var err = document.querySelector('.error.message');
+            
             console.log(data);
             if(data.code =="404"){
+                var err = document.querySelector('.error.message');
                 err.innerHTML = "country not found";
             }else {
+                var err = document.querySelector('.error.message');
                 err.innerHTML ="";
                 // select ------------------------------------
             let countryDom = document.querySelector('.country');
