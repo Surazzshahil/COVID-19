@@ -1,9 +1,9 @@
 function covid19(country){
         // // proxy for local server
-        let proxy = 'https://cors-anywhere.herokuapp.com/';
+//         let proxy = 'https://cors-anywhere.herokuapp.com/';
         // covid-19 api link
         let covid19 = "http://covid-rest.herokuapp.com/";
-        let api = `${proxy}${covid19}${country}`;
+        let api = `${covid19}${country}`;
         // DOM selector
 
         fetch(api,{
