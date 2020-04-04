@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,900&display=swap');
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+}
+
+header {
+    background-color: #000;
+    color:#fff;
+    line-height:40px;
+    text-align:center;
+}
+header h1 {
+    font-size:35px;
+    padding-top:10px;
+}
+section {
+    width:80%;
+    margin: 50px auto;
+}
+
+section input {
+    padding:10px 5px;
+    width:70%;
+    font-weight:900;
+}
+section button {
+    padding:10px 5px;
+    width:20%;
+    background-color: #fff;
+    border:2px solid #000;
+    font-weight:900;
+    transition: 0.3s all;
+    
+}
+section button:hover {
+    background-color: #000;
+    color:#fff;
+}
+.title-search {
+    padding-bottom:10px;
+}
+.img {
+    padding-top:40px;
+    text-align: center;
+}
+.img img {
+    width:80px;
+}
+.country-name {
+    
+    color:rgba(0,0,0,0.7);
+    
+}
+
+span {
+    color:rgb(255, 0, 0);
+}
+.fa-globe {
+    color:blue;
+}
+.country {
+    text-transform: uppercase;
+}
+.bold {
+    font-weight:900;
+}
+.statics {
+    margin:50px 0;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap:20px;
+    grid-row-gap:20px;
+}
+.data {
+    text-align:center;
+    border:1px solid #ccc;
+    padding:15px 0;
+}
+
+@media (max-width:768px) {
+    section{
+        width:90%;
+        margin: auto;
+    }
+    
+    section input::placeholder {
+        font-size:13px;
+        font-weight:400;
+    }
+    .statics{
+        margin:50px 0;
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap:20px;
+        grid-row-gap:20px;
+
+    }
+}
+@media (max-width:425px){
+    h1.title-search {
+        font-size:18px;
+        padding-top:15px;
+    }
+    section input {
+        width:100%;
+        font-size:14px;
+        border:1px solid #000;
+        margin-bottom:5px;
+    }
+    section button {
+        width:100%;
+        border:1px solid #000;
+
+    }
+    header h1{
+        font-size:25px;
+    }
+    header h3 {
+        font-weight:500;
+        font-size:16px;
+    }
+}
+.error-message{
+    color:red;
+    font-size:14px;
+    font-weight:900;
+    padding:0;
+    margin:0;
+}
+footer {
+    width:100%;
+    background-color: #000;
+    color:#fff;
+    font-size:14px;
+    padding:10px 0;
+    text-align:center;
+}
+a {
+    color:#fff;
+    font-weight:900;
+}
