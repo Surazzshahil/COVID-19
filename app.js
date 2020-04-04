@@ -20,7 +20,7 @@ function covid19(country){
                 err.innerHTML = "country not found";
             }else {
                 var err = document.querySelector('.error.message');
-                err.innerHTML ="";
+                err.innerHTML =" ";
                 // select ------------------------------------
             let countryDom = document.querySelector('.country');
             let cases = document.querySelector('#cases');
