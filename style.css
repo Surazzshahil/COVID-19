@@ -16,6 +16,10 @@ header h1 {
     font-size:35px;
     padding-top:10px;
 }
+h3 {
+    line-height:0;
+    font-weight:400;
+}
 section {
     width:80%;
     margin: 50px auto;
