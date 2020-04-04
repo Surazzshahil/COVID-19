@@ -46,6 +46,8 @@ window.onload = function(){
         covid19(countryInp);
     })
 }
+let d = new Date();
+document.getElementById("time").innerHTML = d.toUTCString();
 
 
 
