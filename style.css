@@ -55,8 +55,8 @@ section button:hover {
     
 }
 
-span {
-    color:rgb(255, 0, 0);
+.country {
+    color:#F34423;
 }
 .fa-globe {
     color:blue;
