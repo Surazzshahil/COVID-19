@@ -15,9 +15,8 @@ function covid19(country){
         .then(data=>{
             
             console.log(data);
-            if(data.code =="404"){
-                var err = document.querySelector('.error-message');
-                err.innerHTML = "country not found";
+            if(data.code =="404"||data.code==undefined){
+                alert("something went wrong")
             }else {
                     var err = document.querySelector('.error-message');
                 err.innerHTML = "";
