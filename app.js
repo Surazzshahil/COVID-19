@@ -29,8 +29,8 @@ function covid19(country){
             let recovered = document.querySelector('#recovered');
             let active = document.querySelector('#active');
             // execute------------------------------------
-            countryDom.innerHTML= data.country_name;
-            cases.innerHTML = data.data.total_cases;
+            countryDom.innerHTML= data[0].country_name;
+            cases.innerHTML = data[0].total_cases;
             death.innerHTML = data.data.total_death;
             recovered.innerHTML = data.data.total_recovered;
             active.innerHTML = data.data.active_cases;
